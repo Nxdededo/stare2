@@ -14,6 +14,7 @@ body {
 
 body {
     background-image: linear-gradient(to bottom, black 90%, transparent);
+    overflow: hidden;
 }
 
 .img {
