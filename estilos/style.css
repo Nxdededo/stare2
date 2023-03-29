@@ -83,6 +83,42 @@ a {
     transition: 0.5s;
 }
 
+footer{
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    font-weight: lighter;
+    font-size: x-small;
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px black;
+    bottom: 0;
+    background-image: linear-gradient(to top, black, transparent);
+    opacity: 0.8;
+}
+
+@media (max-width: 1159px){
+    .p1{
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+    }
+    .p2{
+        top: 0;
+    }
+    .img {
+        opacity: 0.3;
+    }
+    .overlay {
+        opacity: 1;
+    }
+    .box{
+        background-color: #deeec05b;
+        backdrop-filter: blur(10px);
+    }
+}
 body:hover .img {
     opacity: 0.3;
 }
