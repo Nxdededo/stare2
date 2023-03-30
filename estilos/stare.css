@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+@media (max-width: 1159px){
+    .box{
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+    header{
+        width: 100%;
+    }
+}
+
+
+.conteiner{
+    background-image: url("../imagens/textura04.jpg");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+header{
+    width: 42%;
+    text-align: center;
+    margin: 0 2%;
+}
+h1{
+    padding: 3%;
+}
+.box{
+    background-image: url("../imagens/fundo11.jpg");
+    background-size: cover;
+    height: 80vh;
+    width: 80vw;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 10px black;
+}
+
+.text{
+    float: left;
+    width: 42%;
+    padding: 20px 2%;
+
+}
+.img{
+    float: right;
+    height: 60%;
+    width: 49%;
+    margin-right: 3%;
+    background-image: url("../imagens/fundo08.jpg"); 
+    background-size: cover;
+    background-position: center;  
+}
