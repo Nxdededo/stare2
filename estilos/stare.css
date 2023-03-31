@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+
 *{
     padding: 0;
     margin: 0;
@@ -9,71 +10,32 @@ html,body{
     width: 100vw;
 }
 
-.conteiner{
-    background-image: url("../imagens/textura04.jpg");
-    height: 100%;
-    width: 100%;
-    background-size: cover;
+body{
+    background-image: url("/imagens/textura04.jpg");
     background-repeat: no-repeat;
-    background-color: white;
-    overflow: hidden;
+    background-size: cover;
     position: relative;
 }
 
 header{
-    background-image: linear-gradient(to bottom, grey, transparent);
-    text-align: center;
-    padding-top: 10px 10px 0 10px;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px gray;
-
+    top: 0;
+    position: absolute
 }
 
 .box{
+    height: 70%;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-color: black;
-    height: 80vh;
-    width: 80vw;
-    overflow: hidden;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    box-shadow: 1px 1px 10px black;
 }
 
-.text{
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    text-shadow: 1px 1px black;
-    text-align: center;
-}
-
-p{
-    text-align: justify;
-    padding: 20px;
-}
-.img{
-    
-    height: 100%;
-    width: 100%;
-    background-image: url("../imagens/fundo08.jpg"); 
-    background-size: cover;
-    background-position: center;  
-    opacity: 0.5;
-}
-
-/* @media (max-width: 1159px){
+@media all and (max-width: 1000px) {
     .box{
-        width: 100%;
-        top: 0;
-        left: 0;
-        transform: translate(0, 0);
-    }
-    header{
+        background-color: aquamarine;
+        height: 50%;
         width: 100%;
     }
-} */
+}
