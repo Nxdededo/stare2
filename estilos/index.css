@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-shadow: black 1px 1px 4px;
 }
 
 body{
@@ -27,7 +28,7 @@ body{
 
 .box-text{
     font-family: 'Heebo', sans-serif;
-    font-size: xx-large;
+    font-size: x-large;
     position: absolute;
     color: white;
 }
@@ -57,11 +58,6 @@ body{
     color: #0B3667;
 }
 
-@media all and (max-width: 1300px){
-    .box-text{
-        font-size: x-large;
-    }
-}
 @media all and (max-width: 900px){
     .box-text{
         font-size: large;
