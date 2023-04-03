@@ -28,7 +28,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("/imagens/fundo11.jpg");
+    background-image: url("../imagens/fundo11.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -42,7 +42,7 @@ header {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("/imagens/textura04.jpg");
+    background-image: url("../imagens/textura04.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: black 1px 1px 6px;
