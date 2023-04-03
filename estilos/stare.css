@@ -7,11 +7,11 @@
     color: #0B3667;
 }
 
-html,
-body {
+html,body {
     height: 100vh;
     width: 100vw;
     text-shadow: #0B3667 1px 1px 4px;
+    overflow: hidden;
 }
 
 header {
@@ -33,7 +33,6 @@ header {
     background-size: cover;
     position: relative;
     box-shadow: black 2px 2px 8px;
-
 }
 
 .box {
@@ -47,6 +46,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: black 1px 1px 6px;
+    overflow: hidden;
 }
 
 .box>p {
@@ -59,13 +59,13 @@ header {
     padding: 20px;
     text-align: center;
     font-weight: bolder;
-    font-size: 4em;
+    /* font-size: 3em; */
 }
 
 .box>img {
     position: absolute;
-    top: 87%;
-    left: 95%;
+    top: 90%;
+    left: 90%;
     transform: translate(-50%, -50%);
     height: 180px;
     width: 200px;
@@ -106,18 +106,27 @@ footer>p {
 
 @media all and (max-width: 700px) {
     .box {
+        font-size: 0.5em;
+        height: 40vh;
+    }
+    .box>img{
+        left: 92%;
+        height: 110px;
+        width: 140px;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .box {
         font-size: 0.4em;
         height: 40vh;
     }
 
     .box>img {
-        top: 90%;
-        left: 92%;
-        height: 90px;
+        top: 92%;
+        left: 90%;
+        height: 70px;
         width: 90px;
     }
 
-    .box>ul {
-        columns: 3;
-    }
 }
