@@ -36,8 +36,8 @@ header {
 }
 
 .box {
-    height: 70vh;
-    width: 80vw;
+    height: 400px;
+    width: 800px;
     position: relative;
     top: 50%;
     left: 50%;
@@ -103,7 +103,7 @@ footer>p {
     padding-top: 10px;
 }
 
-@media all and (max-width: 700px) {
+@media all and (max-width: 833px) {
     .box {
         font-size: 0.5em;
         height: 40vh;
@@ -113,9 +113,13 @@ footer>p {
         height: 110px;
         width: 140px;
     }
+    .box{
+        height: 300px;
+        width: 500px;    
+    }
 }
 
-@media all and (max-width: 500px) {
+@media all and (max-width: 533px) {
     .box {
         font-size: 0.4em;
         height: 40vh;
@@ -127,5 +131,8 @@ footer>p {
         height: 70px;
         width: 90px;
     }
-
+    .box{
+        height: 250px;
+        width: 300px;
+    }
 }
