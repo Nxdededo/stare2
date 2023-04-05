@@ -86,6 +86,10 @@ header {
 .box>ul>li {
     padding: 5px;
 }
+.box>ul>li>p{
+    font-weight: lighter;
+    text-shadow: none;
+}
 
 footer {
     text-align: center;
@@ -105,7 +109,7 @@ footer>p {
 
 @media all and (max-width: 833px) {
     .box {
-        font-size: 0.5em;
+        font-size: 0.6em;
         height: 40vh;
     }
     .box>img{
@@ -121,7 +125,7 @@ footer>p {
 
 @media all and (max-width: 533px) {
     .box {
-        font-size: 0.4em;
+        font-size: 0.45em;
         height: 40vh;
     }
 
