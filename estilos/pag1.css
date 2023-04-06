@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #0B3667;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.box {
+    height: 450px;
+    width: 800px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url("../imagens/textura04.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: black 1px 1px 6px;
+    /* overflow: hidden; */
+}
+
+.box>p {
+    font-size: larger;
+    font-weight: bold;
+    padding: 20px 20px 0 20px;
+}
+
+.box>h1 {
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.box>img {
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    height: 180px;
+    width: 200px;
+    margin: auto;
+}
+
+.box>h2 {
+    text-align: center;
+}
+
+.box>ul {
+    position: relative;
+    padding: 0 20px;
+    font-weight: bold;
+    list-style: inside;
+    columns: 2;
+}
+
+.box>ul>li {
+    padding: 5px;
+}
+.box>ul>li>p{
+    font-weight: lighter;
+    text-shadow: none;
+}
+
+@media all and (max-width: 500px) {
+    .box {
+        font-size: 0.6em;
+        height: 40vh;
+    }
+    .box>img{
+        left: 92%;
+        height: 110px;
+        width: 140px;
+    }
+    .box{
+        height: 300px;
+        width: 500px;    
+    }
+}
+
+@media all and (max-width: 300px) {
+    .box {
+        font-size: 0.45em;
+        height: 40vh;
+    }
+
+    .box>img {
+        top: 92%;
+        left: 90%;
+        height: 70px;
+        width: 90px;
+    }
+    .box{
+        height: 250px;
+        width: 300px;
+    }
+}
