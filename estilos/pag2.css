@@ -1,5 +1,4 @@
-@charset "utf-8";
-
+@charset "UTF-8";
 
 * {
     padding: 0;
@@ -14,59 +13,42 @@ body {
 }
 
 .box {
+    display: flex;
     height: 450px;
     width: 800px;
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-image: url("../imagens/textura04.jpg");
+    background-image: url("../imagens/fundo-texto2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: black 1px 1px 6px;
 }
 
-.box>p {
-    font-size: larger;
-    font-weight: bold;
-    padding: 20px 20px 0 20px;
-}
-
-.box>h1 {
+.text {
     padding: 20px;
     text-align: center;
-    font-weight: bolder;
+    width: 60%;
 }
 
-.box>img {
+h1 {
+    font-size: 3.5em;
+    font-style: italic;
+}
+
+p {
+    margin: 40px 2%;
+    font-size: 1.3em;
+    text-align: justify;
+}
+
+img {
     position: absolute;
-    top: 87%;
-    left: 90%;
-    transform: translate(-50%, -50%);
-    height: 220px;
-    width: 240px;
-    margin: auto;
-}
-
-.box>h2 {
-    text-align: center;
-}
-
-.box>ul {
-    position: relative;
-    padding: 0 20px;
-    font-weight: bold;
-    list-style: inside;
-    columns: 2;
-}
-
-.box>ul>li {
-    padding: 5px;
-}
-
-.box>ul>li>p {
-    font-weight: lighter;
-    text-shadow: none;
+    height: 100%;
+    width: 36%;
+    top: 0;
+    right: 0;
 }
 
 .pag {
@@ -116,13 +98,6 @@ body {
         height: 40vh;
     }
 
-    .box>img {
-        top: 90%;
-        left: 92%;
-        height: 110px;
-        width: 140px;
-    }
-
     .box {
         height: 300px;
         width: 500px;
@@ -140,13 +115,6 @@ body {
         height: 40vh;
     }
 
-    .box>img {
-        top: 92%;
-        left: 90%;
-        height: 70px;
-        width: 90px;
-    }
-
     .box {
         height: 250px;
         width: 300px;
@@ -155,5 +123,9 @@ body {
     .pag {
         top: 110%;
         left: 91%;
+    }
+
+    .text {
+        padding: 20px 10px;
     }
 }
