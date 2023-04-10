@@ -1,49 +1,29 @@
 @charset "UTF-8";
 
-* {
-    padding: 0;
-    margin: 0;
-    color: #0B3667;
-}
-
-html,
-body {
-    height: 100vh;
-    width: 100vw;
-}
-
-.box {
-    display: flex;
-    height: 450px;
-    width: 800px;
+.s2{
     position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background-image: url("../imagens/fundo-texto2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: black 1px 1px 6px;
 }
-
 .text {
     padding: 20px;
     text-align: center;
     width: 60%;
 }
 
-h1 {
+.s2 h1 {
     font-size: 3.5em;
     font-style: italic;
 }
 
-p {
+.s2 p {
     margin: 40px 2%;
     font-size: 1.3em;
     text-align: justify;
 }
 
-img {
+.s2 img {
     position: absolute;
     height: 100%;
     width: 36%;
@@ -51,81 +31,10 @@ img {
     right: 0;
 }
 
-.pag {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: 105%;
-    left: 65%;
-    transform: translate(-104%, -73%);
-    columns: 8;
-    list-style: none;
+
+
+@media all and (max-width: 533px) {
+.text{
+    padding-left: 5px;
 }
-
-.pag-ball {
-    margin: 0 7px;
-    background-color: transparent;
-    border: 2px solid #0B3667;
-    padding: 3px;
-    height: 12px;
-    width: 12px;
-    font-size: 9px;
-    border-radius: 50%;
-}
-
-.button {
-    content: '';
-    display: block;
-    box-sizing: border-box;
-    border: 10px solid transparent;
-    border-left: 20px solid #0B3667;
-    height: 10px;
-    width: 10px;
-    cursor: pointer;
-}
-
-.txt-bt {
-    display: none;
-}
-
-.button.-left {
-    transform: rotate(180deg);
-}
-
-@media all and (max-width: 500px) {
-    .box {
-        font-size: 0.6em;
-        height: 40vh;
-    }
-
-    .box {
-        height: 300px;
-        width: 500px;
-    }
-
-    .pag {
-        top: 108%;
-        left: 73%;
-    }
-}
-
-@media all and (max-width: 300px) {
-    .box {
-        font-size: 0.45em;
-        height: 40vh;
-    }
-
-    .box {
-        height: 250px;
-        width: 300px;
-    }
-
-    .pag {
-        top: 110%;
-        left: 91%;
-    }
-
-    .text {
-        padding: 20px 10px;
-    }
-}
+} 

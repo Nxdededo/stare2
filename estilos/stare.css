@@ -10,8 +10,12 @@
 html,body {
     height: 100vh;
     width: 100vw;
-    text-shadow: #0B3667 1px 1px 4px;
+
     overflow: hidden;
+}
+
+h1,h2,li{
+    text-shadow: #0B3667 1px 1px 4px;
 }
 
 header {
@@ -35,22 +39,118 @@ header {
     box-shadow: black 2px 2px 8px;
 }
 
+input{
+    display: none;
+}
+
 .box {
     height: 450px;
     width: 800px;
-    position: relative;
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: black 1px 1px 6px;
+    overflow: hidden;
 }
 
-iframe{
-    position: absolute;
-    transform: translate(0%,-9%);
-    height: 550px;
-    width: 800px;
+.slide-box{
+    display: flex;
+    height: 100%;
+    width: 500%;
+
+}
+
+.slides{
+    height: 100%;
+    width: 20%;
+    transition: 0.6s;
+}
+.s1{
+    background-image: url("../imagens/textura04.jpg");
+    background-repeat: no-repeat;
     background-size: cover;
+}
+
+.s1>p {
+    font-size: larger;
+    font-weight: bold;
+    padding: 20px 20px 0 20px;
+}
+
+.s1>h1 {
+    padding: 20px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.s1>img {
+    position: absolute;
+    top: 87%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    height: 220px;
+    width: 240px;
+    margin: auto;
+}
+
+.s1>h2 {
+    text-align: center;
+}
+
+.s1>ul {
+    position: relative;
+    padding: 0 20px;
+    font-weight: bold;
+    list-style: inside;
+    columns: 2;
+}
+
+.s1>ul>li {
+    padding: 5px;
+}
+
+.s1>ul>li>p {
+    font-weight: lighter;
+    text-shadow: none;
+}
+
+.nav{
+    display: flex;
+    position: absolute;
+    top: 96%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.ball{
+    font-size: 0.7em;
+    padding: 0 5px;
+    margin: 0 2px;
+    border: solid #0B3667 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.ball:hover{
+    background-color: rgb(154, 196, 167);
+}
+
+#slide1:checked + .s1{
+    margin-left: 0;
+}
+#slide2:checked + #slide3 + .s1{
+    margin-left: -20%;
+}
+#slide3:checked + .s1{
+    margin-left: -40%;
+}
+#slide4:checked + .s1{
+    margin-left: -60%;
+}
+#slide5:checked + .s1{
+    margin-left: -80%;
 }
 
 footer {
@@ -83,10 +183,11 @@ footer>p {
         height: 300px;
         width: 500px;    
     }
-    iframe{
-        height: 400px;
-        width: 500px;
-        transform: translate(0%,-12.5%);
+    .s1>img {
+        top: 90%;
+        left: 92%;
+        height: 110px;
+        width: 140px;
     }
 }
 
@@ -96,19 +197,14 @@ footer>p {
         height: 40vh;
     }
 
-    .box>img {
+    .s1>img {
         top: 92%;
-        left: 90%;
-        height: 70px;
-        width: 90px;
+        left: 87%;
+        height: 100px;
+        width: 120px;
     }
     .box{
         height: 250px;
         width: 300px;
-    }
-    iframe{
-        height: 350px;
-        width: 300px;
-        transform: translate(0%,-14%);
     }
 }
