@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+.s3{
+    position: relative;
+    background-image: url('../imagens/fundo-texto2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.s3>h1{
+    position: absolute;
+    top: 33%;
+    transform: translate(0,-20%);
+    text-align: center;
+    font-size: 4em;
+    height: 100%;
+    width: 45%;
+}
+.s3>p{
+    font-size: 1.5em;
+    text-align: justify;
+    text-indent: 30px;
+    position: absolute;
+    padding: 10% 5%;
+    right: 0;
+    height: 100%;
+    width: 50%;
+}
+
+.s3>a{
+    border: #0B3667 2px solid;
+    border-radius: 10px;
+    padding: 5px 40px;
+    position: absolute;
+    right: 8%;
+    bottom: 2%;
+    background-color: #81afe460;
+}
+
+.s3>img{
+    position: absolute;
+    width: 40%;
+    height: 65%;
+    left: 2%;
+    bottom: -20px;
+}
+
+
+@media all and (max-width: 533px) {
+    .s3>a{
+        padding: 1% 8%;
+        right: 5%;
+    }
+}

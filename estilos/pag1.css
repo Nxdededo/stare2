@@ -1,54 +1,70 @@
-@charset "utf-8";
+@charset "UTF-8";
 
-.s3{
-    position: relative;
-    background-image: url('../imagens/fundo-texto2.jpg');
+.s1{
+    background-image: url("../imagens/textura04.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.s3>h1{
-    position: absolute;
-    top: 33%;
-    transform: translate(0,-20%);
+.s1>p {
+    font-size: larger;
+    font-weight: bold;
+    padding: 20px 20px 0 20px;
+}
+
+.s1>h1 {
+    padding: 20px;
     text-align: center;
-    font-size: 4em;
-    height: 100%;
-    width: 45%;
-}
-.s3>p{
-    font-size: 1.5em;
-    text-align: justify;
-    text-indent: 30px;
-    position: absolute;
-    padding: 10% 5%;
-    right: 0;
-    height: 100%;
-    width: 50%;
+    font-weight: bolder;
 }
 
-.s3>a{
-    border: #0B3667 2px solid;
-    border-radius: 10px;
-    padding: 5px 40px;
+.s1>img {
     position: absolute;
-    right: 8%;
-    bottom: 2%;
-    background-color: #81afe460;
+    top: 87%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+    height: 220px;
+    width: 240px;
+    margin: auto;
 }
 
-.s3>img{
-    position: absolute;
-    width: 40%;
-    height: 65%;
-    left: 2%;
-    bottom: -20px;
+.s1>h2 {
+    text-align: center;
 }
 
+.s1>ul {
+    position: relative;
+    padding: 0 20px;
+    font-weight: bold;
+    list-style: inside;
+    columns: 2;
+}
+
+.s1>ul>li {
+    padding: 5px;
+}
+
+.s1>ul>li>p {
+    font-weight: lighter;
+    text-shadow: none;
+}
+
+@media all and (max-width: 833px) {
+    .s1>img {
+        top: 90%;
+        left: 92%;
+        height: 110px;
+        width: 140px;
+    }
+}
 
 @media all and (max-width: 533px) {
-    .s3>a{
-        padding: 1% 8%;
-        right: 5%;
+
+    .s1>img {
+        top: 92%;
+        left: 87%;
+        height: 100px;
+        width: 120px;
     }
+
 }
